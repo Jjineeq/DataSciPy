@@ -1,7 +1,3 @@
-#
-# 따라하며 배우는 파이썬과 데이터과학(생능출판사 2020)
-# LAB 4-9 입력을 받아서 도형 그리기를 해보자, 111쪽
-#
 import turtle
 t = turtle.Turtle() 
 t.shape("turtle") 
@@ -19,7 +15,18 @@ if s == "사각형":
     t.forward(w) 
     t.left(90) 
     t.forward(h)
+if s =="원":
+    s = turtle.textinput("", "반지름: ")
+    w = int(s)
+    t.circle(w)
+if s == "삼각형":
+    s = turtle.textinput("", "길이: ")
+    w = int(s)
+    t.forward(w)
+    t.left(60)
+    t.forward(w)
+    t.left(60)
+    t.forward(w)
 
-# 나머지 부분은 여러분이 완성해 보세요.
 
 turtle.done()
