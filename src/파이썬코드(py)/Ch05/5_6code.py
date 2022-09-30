@@ -7,6 +7,7 @@ t.shape("turtle")
 for i in range(30):
     length = random.randint(1, 100)
     t.forward(length)
-    angle = random.randint(-180, 180)
+    list_a = [90, 180, 270, 360]
+    angle = random.choice(list_a)
     t.right(angle)
 turtle.done()

@@ -9,6 +9,6 @@ length = 10
 
 while length < 500:
     t.forward(length) 
-    t.right(89)         
+    t.right(50)         
     length += 5	        
 turtle.done()
