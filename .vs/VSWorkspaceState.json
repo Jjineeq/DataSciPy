@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src\\파이썬코드(py)"
+    "\\src",
+    "\\src\\study",
+    "\\src\\파이썬코드(py)",
+    "\\src\\파이썬코드(py)\\Ch05"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\파이썬코드(py)\\Ch05\\5_12code.py",
   "PreviewInSolutionExplorer": false
 }
