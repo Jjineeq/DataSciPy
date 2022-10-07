@@ -1,7 +1,3 @@
-#
-# 따라하며 배우는 파이썬과 데이터과학(생능출판사 2020)
-# LAB 9-1 카이사르 암호를 만들어 보자, 228쪽
-#
 import string
 
 src_str = string.ascii_uppercase
