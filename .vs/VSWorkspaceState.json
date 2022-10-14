@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\파이썬코드(py)",
+    "\\src\\파이썬코드(py)\\Ch08"
   ],
+  "SelectedNode": "\\src\\파이썬코드(py)\\Ch08\\proverb.txt",
   "PreviewInSolutionExplorer": false
 }
