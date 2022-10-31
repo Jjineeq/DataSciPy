@@ -9,4 +9,4 @@ a=[]
 
 import math
 
-print(math.exp(10)/math.exp(3))
+#print(math.exp(10)/math.exp(3))
