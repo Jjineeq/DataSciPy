@@ -14,5 +14,5 @@ plt.title('Real Age vs Physical Age')
 plt.xlabel('Real Age') 
 plt.ylabel('Physical Age') 
  
-plt.savefig("age.png", dpi=600)
+#plt.savefig("age.png", dpi=600)
 plt.show()

@@ -11,10 +11,9 @@ import matplotlib.pyplot as plt
 #plt.boxplot(np.array([ data1, data2 ]) )
 #plt.show()
 
-k = 0
-for i in range(10):
-    i = k
-    k = np.random.randn(100)
+#k = []
 
-plt.boxplot(np.array([1,2,3,4,5,6,7,8,9,10]))
+data1 = np.random.randn(100,10)
+plt.boxplot(data1)
 plt.show()
+
