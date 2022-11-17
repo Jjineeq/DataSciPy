@@ -9,5 +9,4 @@ plt.title('Random Position')
 plt.xlabel('x') 
 plt.ylabel('y') 
  
-#plt.savefig("age.png", dpi=600)
 plt.show()
