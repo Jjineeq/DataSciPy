@@ -4,14 +4,18 @@
 #
 import numpy as np
 import cv2
-
-org = cv2.imread('d:/data/mandrill.png', 1)
+path = "C:/Users/user/github/DataSciPy/data/image/"
+org = cv2.imread(path + 'mandrill.png', 1)
 
 averaged33 = cv2.GaussianBlur(org, (3,3), 1)
+averaged55 = cv2.GaussianBlur(org, (5,5), 1)
+averaged77 = cv2.GaussianBlur(org, (7,7), 1)
 averaged99 = cv2.GaussianBlur(org, (9,9), 1)
 
 cv2.imshow('original', org)
 cv2.imshow('Gaussian 33', averaged33)
+cv2.imshow('Gaussian 55', averaged55)
+cv2.imshow('Gaussian 77', averaged77)
 cv2.imshow('Gaussian 99', averaged99)
 
 # 다음 두 행은 키보드 입력을 기다렸다가 모든 창을 끄고 종료하는 코드

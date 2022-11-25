@@ -4,6 +4,7 @@
 #
 import cv2
 global color_image
+path = "C:/Users/user/github/DataSciPy/data/image/"
 
 # 트랙바가 변경되면 그 값을 임계치로 컬러 이미지를 이진화하여 창에 그림
 def on_change_threshold(x):
@@ -16,7 +17,7 @@ cv2.namedWindow('Thresholding')
 cv2.createTrackbar('threshold', 'Thresholding', 0, 255, on_change_threshold)
 
 # 촛불 이미지를 읽음
-color_image = cv2.imread('d:/data/candles.jpg', cv2.IMREAD_COLOR)
+color_image = cv2.imread(path + 'candles.jpg', cv2.IMREAD_COLOR)
 
 # 처음에는 원본 이미지를 그림 (트랙바를 변경하면 임계치에 따라 이진화 결과 출력)
 cv2.imshow('Thresholding', color_image)

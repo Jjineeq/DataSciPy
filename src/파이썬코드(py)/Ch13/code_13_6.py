@@ -3,8 +3,9 @@
 # 13.6 이미지에 마스크를 씌워볼까, 346쪽
 #
 import cv2
-mask_image = cv2.imread('d:/data/mask_circle.png')
-back_image = cv2.imread('d:/data/iceberg.png')
+path = "C:/Users/user/github/DataSciPy/data/image/"
+mask_image = cv2.imread(path+'mask_circle.png')
+back_image = cv2.imread(path+'iceberg.png')
 mask_image = cv2.resize(mask_image, (300,400))
 back_image = cv2.resize(back_image, (300,400))
 

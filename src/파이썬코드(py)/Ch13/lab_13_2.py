@@ -4,8 +4,9 @@
 #
 import numpy as np
 import cv2
+path = "C:/Users/user/github/DataSciPy/data/image/"
 
-img = cv2.imread('d:/data/book.png')
+img = cv2.imread(path + 'book.png')
 
 # 잡음은 제거하면서 특징은 유지할 수 있는 양방향 필터 적용
 blur_bilateral = cv2.bilateralFilter(img, 11, 75, 75)   

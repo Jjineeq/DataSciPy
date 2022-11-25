@@ -3,9 +3,10 @@
 # 13.12 윤곽선을 더 잘 뽑아 낼 수 있을까, 358쪽
 #
 import cv2
+path = "C:/Users/user/github/DataSciPy/data/image/"
 
 # image를 회색조로 읽어들인다.
-img_gray = cv2.imread('d:/data/green_back.png', cv2.IMREAD_GRAYSCALE)
+img_gray = cv2.imread(path + 'green_back.png', cv2.IMREAD_GRAYSCALE)
 
 # adaptiveThreshold를 적용한다
 # 주변 9x9 픽셀 공간의 평균값 - 5가 임계치가 되고, 이보다 크면 255, 그렇지 않으면 0

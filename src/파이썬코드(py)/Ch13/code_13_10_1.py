@@ -4,8 +4,9 @@
 #
 import numpy as np
 import cv2
+path = "C:/Users/user/github/DataSciPy/data/image/"
 
-original_image = cv2.imread('d:/data/salt_pepper.png', 0)
+original_image = cv2.imread(path + 'salt_pepper.png', 0)
 result_image = cv2.medianBlur(original_image,  5)
 
 cv2.imshow('original', original_image)

@@ -1,7 +1,3 @@
-#
-# 따라하며 배우는 파이썬과 데이터과학(생능출판사 2020)
-# LAB 12-4 다양한 방법으로 concat 적용해 보기, 330쪽
-#
 import pandas as pd 
 
 df_1 = pd.DataFrame( {'A' : ['a10', 'a11', 'a12'], 

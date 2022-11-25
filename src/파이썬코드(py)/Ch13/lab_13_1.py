@@ -4,9 +4,10 @@
 #
 import numpy as np
 import cv2
+path = "C:/Users/user/github/DataSciPy/data/image/"
 
-img1 = cv2.imread('d:/data/green_back.png')       # 전경 이미지 읽기
-img2 = cv2.imread('d:/data/iceberg.png')          # 배경 이미지 읽기
+img1 = cv2.imread(path + 'green_back.png')       # 전경 이미지 읽기
+img2 = cv2.imread(path + 'iceberg.png')          # 배경 이미지 읽기
 
 front_image = cv2.resize(img1, (300, 400))
 back_image = cv2.resize(img2, (300, 400))

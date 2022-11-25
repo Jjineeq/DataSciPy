@@ -3,8 +3,8 @@
 # 13.4 OpenCV로 이미지 다루어 보자, 344쪽
 #
 import cv2
-
-img = cv2.imread('d:/data/mandrill.png', 1)
+path = "C:/Users/user/github/DataSciPy/data/image/"
+img = cv2.imread(path + 'mandrill.png', 1)
 cv2.line(img, (0,0), (200,200), (0,0,255), 5)      # 직선의 시작점과 끝점, 색상, 두께를 지정함
 cv2.rectangle(img, (0,200), (200,20), (0,0,0), 5)  # 사각형의 좌표, 색상을 지정
 cv2.putText(img, "hello", (70,70), fontFace = 2, fontScale = 1, color = (0,0,0))

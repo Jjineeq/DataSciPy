@@ -4,8 +4,9 @@
 #
 import numpy as np
 import cv2
+path = "C:/Users/user/github/DataSciPy/data/image/"
 
-original_image = cv2.imread('d:/data/mandrill.png', 1)
+original_image = cv2.imread(path + 'mandrill.png', 1)
 result_image1 = cv2.GaussianBlur(original_image,  (9,9), 1)
 result_image2 = cv2.medianBlur(original_image, 9)
 result_image3 = cv2.bilateralFilter(original_image, 9, 50, 50)
