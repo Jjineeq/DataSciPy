@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\data",
+    "\\data\\csv",
     "\\src",
     "\\src\\파이썬코드(py)",
-    "\\src\\파이썬코드(py)\\Ch13"
+    "\\src\\파이썬코드(py)\\Ch12"
   ],
-  "SelectedNode": "\\src\\파이썬코드(py)\\Ch13\\code_13_8.py",
+  "SelectedNode": "\\src\\파이썬코드(py)\\Ch12\\lab_12_5.py",
   "PreviewInSolutionExplorer": false
 }
