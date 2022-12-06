@@ -1,20 +1,16 @@
-#
-# 따라하며 배우는 파이썬과 데이터과학(생능출판사 2020)
-# LAB 13-1 합성 사진 만들기 2, 359쪽
-#
 import numpy as np
 import cv2
 path = "C:/Users/user/github/DataSciPy/data/image/"
 
-img1 = cv2.imread(path + 'green_back.png')       # 전경 이미지 읽기
-img2 = cv2.imread(path + 'iceberg.png')          # 배경 이미지 읽기
+img1 = cv2.imread(path + 'green_back.png')       
+img2 = cv2.imread(path + 'iceberg.png')          
 
 front_image = cv2.resize(img1, (300, 400))
 back_image = cv2.resize(img2, (300, 400))
 
-img_hsv = cv2.cvtColor(front_image, cv2.COLOR_BGR2HSV)   # HSV 공간으로 옮김
-l_bound = np.array([40, 100, 50])                 # 녹색 색상의 하한
-u_bound = np.array([80, 255, 255])                # 녹색 색상의 상한
+img_hsv = cv2.cvtColor(front_image, cv2.COLOR_BGR2HSV)  
+l_bound = np.array([40, 100, 50])                
+u_bound = np.array([80, 255, 255])                
 
 my_mask  = cv2.inRange(img_hsv, l_bound, u_bound)   # 녹색 픽셀 찾기
 mask_inv = cv2.bitwise_not(my_mask)                 # 녹색이 아닌 픽셀 찾기
